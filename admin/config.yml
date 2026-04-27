@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: mrmarkdanielsme/minimal-mistakes   # Your repo
+  branch: master                           # Your default branch
+
+# Local backend for testing (optional, remove if not needed)
+# local_backend: true
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", default: "" }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
