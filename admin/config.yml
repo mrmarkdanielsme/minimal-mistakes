@@ -1,13 +1,11 @@
 backend:
   name: github
-  repo: mrmarkdanielsme/minimal-mistakes   # Your repo
-  branch: master                           # Your default branch
+  repo: mrmarkdanielsme/minimal-mistakes
+  branch: master
+  base_url: https://auth.decapcms.org
 
-# Local backend for testing (optional, remove if not needed)
-# local_backend: true
-
-media_folder: "assets/images/uploads"
-public_folder: "/assets/images/uploads"
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "posts"
@@ -17,6 +15,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", default: "" }
+      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Categories", name: "categories", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
