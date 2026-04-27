@@ -20,8 +20,8 @@ direction                : # "ltr" (default), "rtl" # set the direction of the p
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Mr Mark Daniel"
+description              : "This is Testing WEbsite"
 url                      : "https://mrmarkdanielsme.github.io"
 baseurl                  : "/minimal-mistakes"
 repository               : "mrmarkdanielsme/minimal-mistakes"
